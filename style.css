@@ -52,4 +52,10 @@
     max-inline-size: 700px;
     margin-inline: auto;
   }
+
+  form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
