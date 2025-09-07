@@ -58,4 +58,9 @@
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Make the .form-group grid layout will default stretch the <input> element */
+  .form-group {
+    display: grid;
+  }
 }
