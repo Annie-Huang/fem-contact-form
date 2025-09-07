@@ -36,9 +36,20 @@
     margin-block: 0;
   }
 
-  /*  input,
+  /* if we don't have this, the text you type in the input will be taking from the browser default font value */
+  input,
   button,
   textarea {
     font: inherit;
-  }*/
+  }
+}
+
+@layer form {
+  .contact {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-inline-size: 700px;
+    margin-inline: auto;
+  }
 }
