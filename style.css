@@ -72,4 +72,15 @@
   .form-group {
     display: grid;
   }
+
+  input,
+  textarea {
+    border: 1px solid var(--dark-teal);
+    border-radius: 6px;
+    padding: 0.75em 1.5em;
+
+    &:focus-visible {
+      outline-color: var(--green);
+    }
+  }
 }
