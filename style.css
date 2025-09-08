@@ -23,6 +23,7 @@
   }
 
   body {
+    /* accent-color is the styling for checkbox and radio button */
     accent-color: var(--green);
     font-size: 1rem;
     font-family: var(--ff-base);
