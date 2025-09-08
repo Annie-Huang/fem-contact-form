@@ -74,6 +74,17 @@
     display: grid;
   }
 
+  /* Add the * next to the label when it is required */
+  .form-group:has([required]) label {
+    display: flex;
+    gap: 1ch;
+
+    &::after {
+      content: '*';
+      color: var(--green);
+    }
+  }
+
   input,
   textarea {
     border: 1px solid var(--dark-teal);
