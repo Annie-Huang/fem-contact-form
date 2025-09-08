@@ -69,6 +69,12 @@
     }
   }
 
+  /* Get rid of the agent styling of fieldset */
+  fieldset {
+    padding: 0;
+    border: 0;
+  }
+
   /* Make the .form-group grid layout will default stretch the <input> element */
   .form-group {
     display: grid;
