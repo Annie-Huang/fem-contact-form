@@ -74,7 +74,10 @@
     display: grid;
   }
 
-  /* Add the * next to the label when it is required */
+  /* Add the * next to the label when it is required
+     has([required]) means has required attr in one of its child component
+  */
+  fieldset:has([required]) legend,
   .form-group:has([required]) label {
     display: flex;
     gap: 1ch;
