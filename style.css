@@ -73,6 +73,11 @@
   fieldset {
     padding: 0;
     border: 0;
+
+    display: grid;
+    gap: inherit;
+    /* I don't understand why grid-template-columns: inherit would work, as there is a <legend> component under the fieldset */
+    grid-template-columns: inherit;
   }
 
   /* Make the .form-group grid layout will default stretch the <input> element */
