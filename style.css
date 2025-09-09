@@ -108,6 +108,11 @@
     }
   }
 
+  .form-group:has([type='radio']) {
+    display: flex;
+    gap: 1ch;
+  }
+
   .form-group:has([type='radio']:checked) {
     background-color: var(--pale-green);
     border-color: var(--green);
