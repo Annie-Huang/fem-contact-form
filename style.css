@@ -108,6 +108,12 @@
     }
   }
 
+  [type='radio'],
+  [type='checkbox'] {
+    /* Make the radio and checkbox bigger. */
+    width: 1rem;
+  }
+
   .form-group:has([type='radio'], [type='checkbox']) {
     display: flex;
     gap: 1ch;
