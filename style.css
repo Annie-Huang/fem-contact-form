@@ -97,7 +97,8 @@
   }
 
   input,
-  textarea {
+  textarea,
+  .form-group:has([type='radio']) {
     border: 1px solid var(--dark-teal);
     border-radius: 6px;
     padding: 0.75em 1.5em;
