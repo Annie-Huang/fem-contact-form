@@ -80,6 +80,12 @@
     grid-template-columns: inherit;
   }
 
+  textarea {
+    /* If you don't include box-sizing back into default, then the height is including padding which will not make it exactly to be 3 line height */
+    box-sizing: content-box;
+    height: 3lh;
+  }
+
   /* Make the .form-group grid layout will default stretch the <input> element */
   .form-group {
     display: grid;
