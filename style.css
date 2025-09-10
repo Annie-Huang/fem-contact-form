@@ -133,6 +133,18 @@
     gap: 1ch;
   }
 
+  /* Make the whole form-group area for radio button clickable */
+  .form-group:has([type='radio']) {
+    position: relative;
+
+    label::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      /*border: 5px dotted red;*/
+    }
+  }
+
   .form-group:has([type='radio']:checked) {
     background-color: var(--pale-green);
     border-color: var(--green);
