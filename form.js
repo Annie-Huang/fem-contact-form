@@ -2,8 +2,11 @@ const form = document.querySelector('form');
 const firstNameField = document.getElementById('fname');
 
 function validateField(field) {
+  const errorEl = field.parentElement.querySelector('.error-message');
+
   if (!field.validity.valid) {
     console.log('field is invalid, field=', field);
+    errorEl.textContent = 'This field is required';
     return false;
   }
 
