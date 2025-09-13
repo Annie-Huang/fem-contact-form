@@ -162,4 +162,11 @@
       background-color: var(--dark-teal);
     }
   }
+
+  .error-message {
+    color: var(--red);
+  }
+  .error-message:empty {
+    display: none;
+  }
 }
