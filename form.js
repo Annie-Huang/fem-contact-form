@@ -3,7 +3,7 @@ const firstNameField = document.getElementById('fname');
 
 function validateField(field) {
   if (!field.validity.valid) {
-    console.log('field is invalid');
+    console.log('field is invalid, field=', field);
     return false;
   }
 
@@ -20,6 +20,10 @@ form.addEventListener('submit', (e) => {
   const fields = form.querySelectorAll('input, textarea');
   fields.forEach((field) => {
     console.log(`Checking ${field.name}`);
+    const fieldValid = validateField(field);
+    if (!fieldValid) {
+      isValid = false;
+    }
   });
 
   if (isValid) {
