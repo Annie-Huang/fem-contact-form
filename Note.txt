@@ -1,4 +1,5 @@
 HTML & CSS form tutorial / Frontend Mentor (https://www.youtube.com/watch?v=jJgNgNNHqjk)
+How to set custom error messages for your HTML forms (https://www.youtube.com/watch?v=h5qqmE83Tes&t=690s)
 
 https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj?via=kevinpowell
 
