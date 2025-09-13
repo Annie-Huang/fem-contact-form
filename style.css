@@ -163,6 +163,12 @@
     }
   }
 
+  /* if you use input:invalid, it means as soon as it's invalid, including page load, it will show red,
+     input:user-invalid means invalid only after user interaction with it.
+  */
+  input:user-invalid {
+    border-color: var(--red);
+  }
   .error-message {
     color: var(--red);
   }
