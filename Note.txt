@@ -7,3 +7,8 @@ https://github.com/kevin-powell/fem-contact-form/
 https://github.com/Annie-Huang/fem-contact-form
 
 --------------------------------------------------------------------
+
+Useful css notes:
+-------------------
+input:user-invalid vs input:invalid
+.error-message:empty
