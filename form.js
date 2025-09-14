@@ -13,7 +13,8 @@ function validateField(field) {
     return false;
   }
 
-  console.log('field is valid');
+  // console.log('field is valid');
+  errorEl.textContent = '';
   return true;
 }
 
