@@ -2,7 +2,10 @@ const form = document.querySelector('form');
 const firstNameField = document.getElementById('fname');
 
 function validateField(field) {
-  const errorEl = field.parentElement.querySelector('.error-message');
+  const errorEl =
+    field.type === 'radio'
+      ? field.closest('fieldset').querySelector('.error-message')
+      : field.parentElement.querySelector('.error-message');
 
   if (!field.validity.valid) {
     // console.log('field is invalid, field=', field);
