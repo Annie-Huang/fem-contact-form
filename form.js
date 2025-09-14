@@ -17,6 +17,14 @@ function validateField(field) {
   return true;
 }
 
+// Validate the form on blur of each field
+form.querySelectorAll('input, textarea').forEach((input) => {
+  input.addEventListener('blur', () => {
+    validateField(input);
+  });
+});
+
+// Validate the form on Submit
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
