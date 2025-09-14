@@ -33,7 +33,13 @@
 
         <div class="form-group span-all">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            data-error="Please enter a valid email address"
+            id="email"
+            name="email"
+            required
+          />
           <span class="error-message" aria-live="polite"></span>
         </div>
 
@@ -74,7 +80,13 @@
         </div>
 
         <div class="form-group span-all">
-          <input type="checkbox" name="consent" id="consent" required />
+          <input
+            type="checkbox"
+            data-error="You must consent to us contacted you to submit this form."
+            name="consent"
+            id="consent"
+            required
+          />
           <label for="consent">I consent to being contacted by the team</label>
           <span class="error-message" aria-live="polite"></span>
         </div>
