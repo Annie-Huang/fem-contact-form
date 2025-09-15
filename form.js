@@ -44,6 +44,9 @@ form.addEventListener('submit', (e) => {
   if (isValid) {
     console.log('submitting');
   } else {
-    console.log('error');
+    // console.log('error');
+
+    // When we got error on submit, focus back on the first invalid element. Only work in input field, not for radio button or checkbox.
+    form.querySelector(':invalid').focus();
   }
 });
