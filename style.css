@@ -92,6 +92,9 @@
   /* Make the .form-group grid layout will default stretch the <input> element */
   .form-group {
     display: grid;
+
+    /* when First Name and Last Name only got one in error, don't stretch the height of the valid input to match the whole grid height */
+    grid-auto-rows: min-content;
   }
 
   /* Add the * next to the label when it is required
