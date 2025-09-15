@@ -42,7 +42,10 @@ form.addEventListener('submit', (e) => {
   });
 
   if (isValid) {
-    console.log('submitting');
+    // console.log('submitting');
+
+    // send form data;
+    form.reset();
   } else {
     // console.log('error');
 
